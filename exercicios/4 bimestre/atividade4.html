@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div id="y" onmouseover="cor()"></div>
+        <div id="z" onclick="clicar()"></div>
+    
+        <script>
+            let div0 = document.getElementById("y");
+            let div1 = document.getElementById("z");
+           
+            div0.style.width = "180px";
+            div0.style.heigth = "300px";
+            div0.style.backgroundColor = "#7D8F69";
+            div0.style.right = "200px";
+            div0.innerHTML = "<h1> Passe o mouse aqui</h1>"
+            
+            div1.style.width = "180px";
+            div1.style.heigth = "300px";
+            div1.style.backgroundColor = "#8D9EFF";
+            div1.innerHTML = "<h1> clique aqui!</h1>";
+    
+            function cor(){
+                div0.style.backgroundColor = "#E6E5A3";
+            }
+    
+            function clicar(){
+                algo = prompt("Digite o que deseja: ");
+                alert(algo);
+            }
+    
+        </script>
+</body>
+</html>

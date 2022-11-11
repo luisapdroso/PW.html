@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Atividade 5</h1>
+    <h2>Função Nomeada</h2>
+    <p>função nomeada recebe um nome <br>
+        function soma (parcela1, parcela2) {...} <br>
+        e quando quiser repito ela várias vezes. <br>        
+    </p>
+    <h5>Exemplo:</h5>
+    <p>function minhaFuncao(objeto) { <br>
+        objeto.mark = "Honda"; <br>
+      } <br>
+      
+      var moto = {mark: "Yamaha", model: "Fazer250"}; <br>
+      var x, y; <br>
+      
+      x = moto.mark;     // x recebe o valor "Yamaha" <br>
+      
+      minhaFuncao(moto); <br>
+      y = moto.mark;     // y recebe o valor "Honda" <br>
+                          //propriedade make foi alterada pela função <br>
+      </p>
+      <h2>Função Nomeada com argumento(parâmetro) e retorno</h2>
+      <p>Funções com Argumentos nomeados são especialmente úteis quando você está chamando um procedimento que tem argumentos opcionais. Se você usar argumentos nomeados, não será preciso incluir vírgulas para indicar argumentos posicionais ausentes. O uso de argumentos nomeados facilita o controle de quais argumentos você passou e quais você omitiu. 
+
+        Argumentos opcionais são precedidos pela palavra-chave Opcional na definição do procedimento. Você também pode especificar um valor padrão para o argumento opcional na definição do procedimento.
+        </p>
+        <h5>Exemplo:</h5>
+        <p>
+               document.write("O quadrado de 2 é: "); <br>
+               document.write( quadrado(2) );  <br>
+            
+               function quadrado(numero) <br>
+               { <br>
+                var resposta = numero * numero; <br>
+                return resposta; <br>
+               } <br>
+            </p>
+            <h2>Função com Construtor</h2>
+            <p>As funções construtoras em JavaScript são como as classes do Java, diferenciando apenas pela sintaxe. <br>
+                Em questão de funcionamento, tanto funções contrutoras no JavaScript quanto Classes no Java têm a mesma utilidade: servir de molde para a criação de objetos.</p>
+            <h5>Exemplo:</h5>
+            <p>class Quadrado extends Poligono { <br>
+  constructor(comprimento) { <br>
+    // super chama o construtor da classe pai que vai atribuir comprimento para os atributos comprimento e altura herdados pela nossa classe filha Quadrado super(comprimento, comprimento); <br>
+    // Nas classes filhas, super() deve ser chamado antes de usar o this. Sem ele vai ocorrer um erro de referência. O this agora se refere a classe filha Quadrado <br>
+    this.nome = 'Quadrado'; <br>
+  } <br>
+
+  // os atributos a seguir são herdados da classe pai Poligono: altura, comprimento e area. <br>
+
+  get area() { <br>
+    return this.altura * this.comprimento; <br>
+  } <br>
+
+  set area(valor) { <br>
+    this.area = valor; <br>
+  } <br>
+} <br>
+</p>
+<h2>Função Literal (variável)</h2>
+<p>Função Literal é um valor que você escreve literalmente no seu script, pode ser atribuindo a uma variável, ou passando com argumento de uma função</p>
+<h5>Exemplos:</h5>
+<P>function minhaFuncao(objeto) { <br>
+    objeto.marca = "Honda"; <br>
+  } <br>
+ 
+  /* <br>
+   * Declare a variável 'moto'; <br>
+   * crie e inicialize um novo Objeto; <br>
+   * atribua referência para 'moto' <br>
+   */ <br>
+  var moto = { <br>
+    marca: "Yamaha", <br>
+    modelo: "Fazer", <br>
+  }; <br>
+ 
+  /* Exibe 'Yamaha' */ <br>
+  console.log(moto.marca);
+ 
+  /* Passe a referência do objeto para a função */ <br>
+  minhaFuncao(moto); <br>
+ 
+  /* <br>
+   * Exibe 'Honda' como valor para a propriedade 'marca' <br>
+   * do objeto, mudado pela função. <br>
+   */ <br>
+  console.log(moto.marca); <br>
+ </P>
+ <h2>Função de Flecha(Arrow functions)</h2>
+ <p>As arrow functions permitem ter um retorno implícito, que são valores retornados sem ter que usar a palavar return. <br>
+    O conceito de funcionamento do this pode variar dependendo do contexto e do modo como o JavaScript esta sendo usado.</p>
+    <h5>Exemplo:</h5>
+    <p>const materials = [ <br>
+        'Hydrogen', <br>
+        'Helium', <br>
+        'Lithium', <br>
+        'Beryllium' <br>
+      ]; <br>
+      
+      console.log(materials.map(material => material.length))
+      </p>
+</body>
+</html>
